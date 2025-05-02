@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #333;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.submit-btn:active {
+    transform: translateY(1px); /* Press effect when clicked */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 40px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 1em;
+    }
+
+    .submit-btn {
+        font-size: 1.1em;
+    }
+}
